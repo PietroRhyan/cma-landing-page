@@ -1,3 +1,6 @@
+"use client"
+
+import { MobileMenu } from "@/context/handleOpenMobileMenu"
 import Link from "next/link"
 
 interface MenuItemType {
@@ -25,13 +28,15 @@ const menus: MenuItemType[] = [
 ]
 
 export function MobileSideMenu() {
+  const { switchVisibility } = MobileMenu()
+
   return (
-    <div role="dialog" className="w-[225px] p-3 z-50 absolute top-[56px] right-0 bg-[#FFF] rounded-lg shadow-float border border-light-gray" >
+    <div role="dialog" className="w-[225px] p-3 z-50 absolute top-[56px] right-0 bg-[#FFF] rounded-lg shadow-float-thin border border-light-gray" >
       <h4 className="text-sm font-normal mb-1">Sessões</h4>
 
       <menu className="flex flex-col">
         {menus.map((menu) => (
-          <Link key={menu.section} href={menu.section}>
+          <Link onClick={() => switchVisibility(false)} key={menu.section} href={menu.section}>
             <li className="py-2 px-2 text-sm font-medium border-b border-light-gray">
               {menu.name}
             </li>

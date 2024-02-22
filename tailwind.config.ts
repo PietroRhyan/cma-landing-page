@@ -6,12 +6,14 @@ const config: Config = {
     extend: {
       boxShadow: {
         thin: '0 2px 2px -1px rgba(0, 0, 0, 0.15), 0 4px 8px 2px rgba(0, 0, 0, 0.05)',
-        float: '0 2px 4px -1px rgba(0, 0, 0, 0.10)',
+        float: '0 2px 4px 2px rgba(0, 0, 0, 0.15)',
+        'float-thin': '0 2px 4px 0px rgba(0, 0, 0, 0.15)',
         faq: '0 2px 2px -2px rgba(0, 0, 0, 0.15), 0 4px 10px -1px rgba(0, 0, 0, 0.05)',
       },
 
       colors: {
         black: '#1E1E1E',
+        'light-black': '#262626',
         'dark-gray': '#5A5A5A',
         gray: '#9C9C9C',
         'light-gray': '#E7E7E7',
@@ -23,6 +25,7 @@ const config: Config = {
 
         red: '#E94C4C',
         blue: '#3AADED',
+        green: '#64BB6C'
       },
 
       screens: {

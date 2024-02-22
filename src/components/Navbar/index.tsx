@@ -15,28 +15,30 @@ export function Navbar() {
   const { isOpen } = MobileMenu()
 
   return (
-    <header className="max-w-7xl w-full px-4 sm:px-8 md:px-12 mx-auto flex items-center justify-between pt-4">
-      <div className="flex items-center gap-6">
-        <Link href="/">
-          <Image src={cmaLogo} alt="CMA Logo" />
-        </Link>
+    <header className="w-full border-b border-light-gray">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 md:px-12 flex items-center justify-between py-4" >
+        <div className="flex items-center gap-6">
+          <Link href="/">
+            <Image src={cmaLogo} alt="CMA Logo" priority />
+          </Link>
 
-        <div className="hidden slg:flex items-center gap-6">
-          <div role="separator" className="w-[1px] h-4 bg-light-gray"></div>
+          <div className="hidden slg:flex items-center gap-6">
+            <div role="separator" className="w-[1px] h-4 bg-light-gray"></div>
 
-          <Menu />
+            <Menu />
+          </div>
         </div>
-      </div>
 
-      <div className="hidden slg:block">
-        <CTAButton title="Venha fazer parte" colorVariant="black" />
-      </div>
+        <div className="hidden slg:block">
+          <CTAButton title="Venha fazer parte" colorVariant="black" />
+        </div>
 
-      {/* Appears before 845px */}
-      <div className="relative block slg:hidden" >
-        <MobileMenuButton />
+        {/* Appears before 845px */}
+        <div className="relative block slg:hidden" >
+          <MobileMenuButton />
 
-        { isOpen ? ( <MobileSideMenu /> ) : null }
+          { isOpen ? ( <MobileSideMenu /> ) : null }
+        </div>
       </div>
     </header>
   )
