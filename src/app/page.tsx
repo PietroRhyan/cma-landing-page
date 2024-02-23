@@ -154,7 +154,7 @@ export default function Home() {
 
             <div className="relative w-[268px] h-[300px] sm:w-[300px] sm:h-[350px]" >
               <div className="relative w-full h-full rounded-md overflow-hidden shadow-float" >
-                <Image src={singer} alt="Uma cantora no palco com um fundo preto." fill priority objectFit="cover" quality={100} sizes="100vw" placeholder="blur" />
+                <Image src={singer} alt="Uma cantora no palco com um fundo preto." className="object-cover" fill priority quality={100} sizes="100vw" placeholder="blur" />
               </div>
 
               <div className="w-[115px] absolute -top-[18px] -right-[4px] sm:-right-[50px] bg-white border border-light-gray rounded-[4px] p-[4px] space-y-[10px] shadow-float-thin" >
@@ -226,8 +226,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-black relative overflow-hidden py-12" >
-        <div className="max-w-7xl w-full px-4 sm:px-8 md:px-12 mx-auto space-y-8 flex flex-col items-center justify-center" >
+      <section className="w-full overflow-hidden bg-black py-12" >
+        <div className="relative max-w-7xl w-full px-4 sm:px-8 md:px-12 mx-auto space-y-8 flex flex-col items-center justify-center" >
+          <div className="absolute -top-[260px] -left-[260px] z-10 w-[350px] h-[350px] rounded-full [background:radial-gradient(circle,#FAE42325_50%,#FAE42315_100%)] blur-3xl"></div>
+          <div className="absolute -bottom-[200px] -right-[160px] z-10 w-[350px] h-[350px] rounded-full [background:radial-gradient(circle,#FAE42325_50%,#FAE42315_100%)] blur-3xl"></div>
+
           <div className="flex flex-col items-center justify-center text-center" >
             <h2 className="text-krona text-2xl sm:text-[36px] text-white" >
               Estamos Aqui Para Cada Passo
