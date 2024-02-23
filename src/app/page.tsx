@@ -17,6 +17,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 interface DpssType {
   name: string
   imageUrl: string
@@ -199,26 +201,23 @@ export default function Home() {
           <div className="w-full flex flex-col gap-6 justify-center md:grid md:grid-cols-3" >
             <div className="flex w-full md:w-[110px] flex-col items-center md:items-start justify-center" >
               <span className="text-krona text-[32px]">+600</span>
-              <p className="text-sm text-poppins font-medium text-gray">Clientes</p>
+              <p className="text-sm text-poppins font-medium text-center sm:text-left text-gray">Clientes</p>
             </div>
 
             <div className="flex w-full md:w-[130px] flex-col items-center md:items-start justify-center" >
               <span className="text-krona text-[32px]">+15K</span>
-              <p className="text-sm text-poppins font-medium text-gray">Músicas lançadas</p>
+              <p className="text-sm text-poppins font-medium text-center sm:text-left text-gray">Músicas lançadas</p>
             </div>
 
             <div className="flex w-full md:w-[145px] flex-col items-center md:items-start justify-center" >
               <span className="text-krona text-[32px]">6.5M</span>
-              <p className="text-sm text-poppins font-medium text-gray">Em movimentações</p>
+              <p className="text-sm text-poppins font-medium text-center sm:text-left text-gray">Em movimentações</p>
             </div>
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center mt-[300px] md:mt-[160px] justify-center gap-5" >
-          <div className="border-b-2 border-yellow pb-2 sm:pb-3" >
-            <h2 className="text-poppins font-medium text-2xl sm:text-[32px] text-center">Sobre nós e nosso trabalho</h2>
-          </div>
-
+        <div className="w-full flex flex-col items-center mt-[340px] md:mt-[160px] justify-center gap-5" >
+          <h2 className="relative inline underline-lastline text-poppins font-medium text-2xl sm:text-[32px] text-center">Sobre nós e nosso trabalho</h2>
           <p className="text-sm lgp:text-base font-medium max-w-[925px]" >
             A CMA Digital Music possui 20 anos de experiência no gerenciamento de carreiras, produção musical, de shows e clipes, além de promover aproximação do artista com o público final de maneira eficiente. Fazemos sua música ganhar notoriedade tanto nos canais modernos de divulgação musical, quanto nas tradicionais rádios brasileiras.
           </p>
@@ -260,13 +259,11 @@ export default function Home() {
       </section>
 
       <section id="artistas" className="max-w-7xl w-full px-4 sm:px-8 md:px-12 mx-auto space-y-8 flex flex-col items-center justify-center py-12" >
-        <div className="border-b-2 border-yellow pb-2 sm:pb-3" >
-          <h2 className="text-poppins font-medium text-2xl sm:text-[32px] text-center">Conheça nossos principais artistas</h2>
-        </div>
+        <h2 className="relative inline underline-lastline text-poppins font-medium text-2xl sm:text-[32px] text-center">Conheça nossos principais artistas</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16 gap-y-8" >
           {artists.map((artist) => (
-            <ArtistsCard 
+            <ArtistsCard
               name={artist.name}
               imageUrl={artist.imageUrl}
               description={artist.description}
@@ -280,10 +277,8 @@ export default function Home() {
         </Link>
       </section>
 
-      <section id="faq" className="max-w-7xl w-full px-4 sm:px-8 md:px-12 py-12 mx-auto space-y-8 flex flex-col items-center justify-center" >
-        <div className="border-b-2 border-yellow pb-2 sm:pb-3" >
-          <h2 className="text-poppins font-medium text-2xl sm:text-[32px] text-center">Perguntas Frequentes</h2>
-        </div>
+      <section id="faq" className="max-w-7xl w-full px-4 sm:px-8 md:px-12 py-12 mb-5 mx-auto space-y-8 flex flex-col items-center justify-center" >
+        <h2 className="relative inline underline-lastline text-poppins font-medium text-2xl sm:text-[32px] text-center">Perguntas Frequentes</h2>
 
         <div className="max-w-[700px] w-full mx-auto" >
           <Accordion type="single" collapsible>
@@ -302,6 +297,110 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </div>
+      </section>
+
+      <section id="contato" className="max-w-[880px] w-full mx-auto rounded-xl border border-light-gray bg-white p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4" >
+        <div className="w-fit h-fit" >
+          <h2 className="text-poppins relative inline underline-lastline font-medium text-2xl sm:text-[32px] text-center md:text-left">Entre em contato e venha se tornar parte desse time!</h2>
+        </div>
+
+        <form action="" className="w-full flex flex-col items-start gap-3" >
+          <label htmlFor="name" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
+            Nome completo
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Digite seu nome"
+              className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+            />
+          </label>
+
+          <label htmlFor="label" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
+            Selo / Nome artístico
+
+            <input
+              type="text"
+              id="label"
+              placeholder="Digite o selo da sua label / nome artístico"
+              className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+            />
+          </label>
+
+          <label htmlFor="email" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
+            E-mail
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite seu email principal"
+              className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+            />
+          </label>
+
+          <label htmlFor="country" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
+            País
+
+            <Select>
+              <SelectTrigger>
+                <SelectValue placeholder="Selecione seu país" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem value="Argentina" >Argentina</SelectItem>
+                  <SelectItem value="Brazil" >Brasil</SelectItem>
+                  <SelectItem value="United States" >Estados Unidos</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </label>
+
+          <div className="flex items-center justify-start gap-1 w-full" >
+            <label htmlFor="ddd" className="flex flex-col items-start justify-center max-w-[50px] w-full gap-1 text-sm font-medium text-black" >
+              DDD
+
+              <input
+                type="text"
+                id="ddd"
+                content="+ 55"
+                disabled
+                className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+              />
+            </label>
+
+            <label htmlFor="phone" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
+              Telefone
+
+              <input
+                type="text"
+                id="phone"
+                placeholder="Digite seu telefone"
+                className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+              />
+            </label>
+          </div>
+
+
+          <label htmlFor="objective" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
+            Porque quer se tornar um artista
+
+            <textarea
+              id="objective"
+              placeholder="Digite aqui seus principais objetivos que quer alcançar como artista"
+              className="w-full text-sm resize-none min-h-[100px] font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+            />
+          </label>
+
+          <div className="flex w-full items-center justify-end gap-1 pt-4" >
+            <button type="reset" className="text-red text-base font-semibold px-4 py-2 transition-all duration-200 hover:text-opacity-70" >
+              Limpar
+            </button>
+
+            <button type="submit" className="text-white text-base font-semibold px-4 py-2 transition-all duration-200 bg-blue rounded-[4px] hover:bg-blue/90 shadow-thin" >
+              Enviar
+            </button>
+          </div>
+        </form>
       </section>
     </div>
   )

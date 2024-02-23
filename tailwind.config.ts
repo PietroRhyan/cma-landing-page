@@ -20,6 +20,7 @@ const config: Config = {
       },
       boxShadow: {
         thin: '0 2px 2px -1px rgba(0, 0, 0, 0.15), 0 4px 8px 2px rgba(0, 0, 0, 0.05)',
+        input: '0 2px 2px -2px rgba(0, 0, 0, 0.15), 0 4px 8px 2px rgba(0, 0, 0, 0.05)',
         float: '0 2px 4px 2px rgba(0, 0, 0, 0.15)',
         'float-thin': '0 2px 4px 0px rgba(0, 0, 0, 0.15)',
         faq: '0 2px 2px -2px rgba(0, 0, 0, 0.15), 0 4px 10px -1px rgba(0, 0, 0, 0.05)',

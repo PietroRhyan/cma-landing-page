@@ -9,4 +9,14 @@
 .text-krona {
   font-family: var(--font-krona)
 }
+
+.underline-lastline::after {
+  position: absolute;
+  left: 0; 
+  bottom: 0; 
+  width: 100%; 
+  height: 1px; 
+  border-bottom: 2px solid #FAE423; 
+  content: "";
+}
  
