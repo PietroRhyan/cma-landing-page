@@ -12,19 +12,19 @@ interface FooterMenuType {
 const sessions: FooterMenuType[] = [
   {
     name: 'Sobre nós',
-    link: '#sobre',
+    link: '/#sobre',
   },
   {
     name: 'Artistas',
-    link: '#artistas',
+    link: '/#artistas',
   },
   {
     name: 'Perguntas Frequentes',
-    link: '#faq',
+    link: '/#faq',
   },
   {
     name: 'Contato',
-    link: '#contato',
+    link: '/#contato',
   },
 ]
 

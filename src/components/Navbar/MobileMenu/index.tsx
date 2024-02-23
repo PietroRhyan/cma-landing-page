@@ -11,19 +11,19 @@ interface MenuItemType {
 const menus: MenuItemType[] = [
   {
     name: 'Sobre nós',
-    section: '#sobre',
+    section: '/#sobre',
   },
   {
     name: 'Artistas',
-    section: '#artistas',
+    section: '/#artistas',
   },
   {
     name: 'FAQ',
-    section: '#faq',
+    section: '/#faq',
   },
   {
     name: 'Contato',
-    section: '#contato',
+    section: '/#contato',
   },
 ]
 

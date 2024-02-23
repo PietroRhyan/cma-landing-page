@@ -222,10 +222,10 @@ export default function Home() {
             A CMA Digital Music possui 20 anos de experiência no gerenciamento de carreiras, produção musical, de shows e clipes, além de promover aproximação do artista com o público final de maneira eficiente. Fazemos sua música ganhar notoriedade tanto nos canais modernos de divulgação musical, quanto nas tradicionais rádios brasileiras.
           </p>
 
-          <div className="flex items-center justify-center gap-6 pt-4" >
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4" >
             <CTAButton title="Venha fazer parte" colorVariant="black" />
 
-            <Link href='#sobre' className="font-semibold text-sm slg:text-base underline underline-offset-2" >
+            <Link href='/sobre' className="font-semibold text-sm slg:text-base underline underline-offset-2" >
               Descubra mais sobre a CMA
             </Link>
           </div>
@@ -272,7 +272,7 @@ export default function Home() {
           ))}
         </div>
 
-        <Link href="/" className="font-semibold text-sm slg:text-base underline underline-offset-2" >
+        <Link href="/artistas" className="font-semibold text-sm slg:text-base underline underline-offset-2" >
           Ver mais artistas
         </Link>
       </section>
@@ -379,7 +379,6 @@ export default function Home() {
               />
             </label>
           </div>
-
 
           <label htmlFor="objective" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
             Porque quer se tornar um artista
