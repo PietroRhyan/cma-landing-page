@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 .text-poppins {
-  font-family: var(--font-poppins);
+  font-family: var(--font-poppins)
 }
 
 .text-krona {
-  font-family: var(--font-krona);
+  font-family: var(--font-krona)
 }
+ 

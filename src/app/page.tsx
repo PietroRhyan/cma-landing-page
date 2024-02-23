@@ -10,6 +10,13 @@ import singer from '/public/images/singer-unsplash.jpg'
 import { AdvantageContent } from "@/components/AdvantageContent";
 import { ArtistsCard } from "@/components/ArtistsCard";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 interface DpssType {
   name: string
   imageUrl: string
@@ -240,7 +247,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16 gap-y-8" >
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16 gap-y-8 z-20" >
             {advantages.map((info) => (
               <AdvantageContent title={info.title} text={info.text} key={info.title} >
                 <AdvantageContent.Icon>{info.children}</AdvantageContent.Icon>
@@ -271,6 +278,30 @@ export default function Home() {
         <Link href="/" className="font-semibold text-sm slg:text-base underline underline-offset-2" >
           Ver mais artistas
         </Link>
+      </section>
+
+      <section id="faq" className="max-w-7xl w-full px-4 sm:px-8 md:px-12 py-12 mx-auto space-y-8 flex flex-col items-center justify-center" >
+        <div className="border-b-2 border-yellow pb-2 sm:pb-3" >
+          <h2 className="text-poppins font-medium text-2xl sm:text-[32px] text-center">Perguntas Frequentes</h2>
+        </div>
+
+        <div className="max-w-[700px] w-full mx-auto" >
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Como posso fazer parte da CMA?</AccordionTrigger>
+              <AccordionContent>
+                Para fazer parte da CMA basta ir na área de contato, preencher o formulário com as informações necessárias e enviar uma solicitação para nossa equipe. Normalmente a solicitação leva em torno de 72h para ser avaliada e enviada a resposta por email. Após isso é só seguir os passos descritos no correio eletrônico.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Lorem Ipsum</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </section>
     </div>
   )
