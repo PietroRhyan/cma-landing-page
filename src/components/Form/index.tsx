@@ -31,7 +31,7 @@ export function Form() {
           id="name"
           {...register('name')}
           placeholder="Digite seu nome"
-          className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+          className="w-full text-sm font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
         />
         {errors.name ? (
           <span className="text-xs text-red font-normal" >{errors.name.message}</span>
@@ -46,7 +46,7 @@ export function Form() {
           id="label"
           {...register('label')}
           placeholder="Digite o selo da sua label / nome artístico"
-          className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+          className="w-full text-sm font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
         />
         {errors.label ? (
           <span className="text-xs text-red font-normal" >{errors.label.message}</span>
@@ -61,7 +61,7 @@ export function Form() {
           id="email"
           {...register('email')}
           placeholder="Digite seu email principal"
-          className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+          className="w-full text-sm font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
         />
         {errors.email ? (
           <span className="text-xs text-red font-normal" >{errors.email.message}</span>
@@ -71,7 +71,7 @@ export function Form() {
       <label htmlFor="country" className="flex flex-col items-start justify-center w-full gap-1 text-sm font-medium text-black" >
         País
 
-        <select id="country" {...register('country')} className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input" >
+        <select id="country" {...register('country')} className="w-full text-sm font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input" >
           <option value="">Selecione um país</option>
           <option value="Argentina">Argentina</option>
           <option value="Brazil">Brasil</option>
@@ -92,7 +92,7 @@ export function Form() {
             {...register('ddd')}
             defaultValue={55}
             readOnly
-            className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+            className="w-full text-sm font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
           />
         </label>
           {errors.ddd ? (
@@ -107,7 +107,7 @@ export function Form() {
             id="phone"
             {...register('phone')}
             placeholder="Digite seu telefone"
-            className="w-full text-sm font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+            className="w-full text-sm font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
           />
           {errors.phone ? (
           <span className="text-xs text-red font-normal" >{errors.phone.message}</span>
@@ -122,7 +122,7 @@ export function Form() {
           id="objective"
           {...register('objective')}
           placeholder="Digite aqui seus principais objetivos que quer alcançar como artista"
-          className="w-full text-sm resize-none min-h-[100px] font-medium placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
+          className="w-full text-sm resize-none min-h-[100px] font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
         />
         {errors.objective ? (
           <span className="text-xs text-red font-normal" >{errors.objective.message}</span>

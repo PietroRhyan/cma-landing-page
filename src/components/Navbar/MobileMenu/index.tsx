@@ -43,7 +43,7 @@ export function MobileSideMenu() {
           </Link>
         ))}
 
-        <Link href='#contato' className="flex items-center justify-center border mt-2 text-white bg-black rounded-lg transition-opacity duration-200 hover:bg-opacity-95 font-semibold py-2" >Venha fazer parte</Link>
+        <Link onClick={() => switchVisibility(false)} href='#contato' className="flex items-center justify-center border mt-2 text-white bg-black rounded-lg transition-opacity duration-200 hover:bg-opacity-95 font-semibold py-2" >Venha fazer parte</Link>
       </menu>
     </div>
   )
