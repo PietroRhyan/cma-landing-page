@@ -145,11 +145,10 @@ export default function Home() {
               <h4 className="text-sm md:text-base font-medium text-[#C8C8C8]">Plataformas</h4>
 
               <div className="w-full flex flex-col md:flex-row items-center justify-center md:justify-start gap-3" >
-                <div className="flex items-center justify-start gap-3 flex-wrap" >
+                <div className="flex items-center justify-center md:justify-start gap-3 flex-wrap" >
                   {dpss.map((dps) => (
-                    <Image src={dps.imageUrl} alt={dps.name} key={dps.name} width={85} height={25} />
+                    <Image src={dps.imageUrl} alt={dps.name} key={dps.name} className="w-auto h-auto" width={85} height={25} />
                   ))}
-
                 </div>
 
                 <span className="text-[10px] md:text-sm font-medium text-[#C8C8C8]" >e muito mais</span>
@@ -162,7 +161,7 @@ export default function Home() {
 
             <div className="relative w-[268px] h-[300px] sm:w-[300px] sm:h-[350px]" >
               <div className="relative w-full h-full rounded-md overflow-hidden shadow-float" >
-                <Image src={singer} alt="Uma cantora no palco com um fundo preto." className="object-cover" fill priority quality={100} sizes="100vw" placeholder="blur" />
+                <Image src={singer} alt="Uma cantora no palco com um fundo preto." className="object-cover" fill priority quality={100} sizes="(max-width: 845px) 100vw, 50vw" placeholder="blur" />
               </div>
 
               <div className="w-[115px] absolute -top-[18px] -right-[4px] sm:-right-[50px] bg-white border border-light-gray rounded-[4px] p-[4px] space-y-[10px] shadow-float-thin" >
