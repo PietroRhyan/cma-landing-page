@@ -368,19 +368,6 @@ export default function Home() {
                 Como posso fazer parte da CMA?
               </AccordionTrigger>
               <AccordionContent>
-                Para fazer parte da CMA basta ir na área de contato, preencher o
-                formulário com as informações necessárias e enviar uma
-                solicitação para nossa equipe. Normalmente a solicitação leva em
-                torno de 72h para ser avaliada e enviada a resposta por email.
-                Após isso é só seguir os passos descritos no correio eletrônico.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger>
-                Como faço para distribuir minha música pela Cma Digital Music?
-              </AccordionTrigger>
-              <AccordionContent>
                 Distribuir sua música como artista independente é simples. Siga
                 estes passos:
                 <ul className="pt-2">
@@ -402,7 +389,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3">
+            <AccordionItem value="item-2">
               <AccordionTrigger>
                 A CMA Digital Music registra minha faixa?
               </AccordionTrigger>
@@ -413,7 +400,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4">
+            <AccordionItem value="item-3">
               <AccordionTrigger>
                 Quanto tempo leva para meu acesso estar pronto?
               </AccordionTrigger>
@@ -423,9 +410,9 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5">
+            <AccordionItem value="item-4">
               <AccordionTrigger>
-                A CMA Digital Music é uma produtora/gravadora?
+                A CMA Digital Music é uma produtora/ gravadora?
               </AccordionTrigger>
               <AccordionContent>
                 Sim, temos nosso próprio estúdio no interior baiano com
@@ -436,7 +423,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-6">
+            <AccordionItem value="item-5">
               <AccordionTrigger>
                 Posso editar minha faixa após o lançamento?
               </AccordionTrigger>
