@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,7 +16,7 @@ export function Navbar() {
 
   return (
     <header className="w-full border-b border-light-gray">
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 md:px-12 flex items-center justify-between py-4" >
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 md:px-12 flex items-center justify-between py-4">
         <div className="flex items-center gap-6">
           <Link href="/">
             <Image src={cmaLogo} alt="CMA Logo" priority />
@@ -34,10 +34,10 @@ export function Navbar() {
         </div>
 
         {/* Appears before 845px */}
-        <div className="relative block slg:hidden" >
+        <div className="relative block slg:hidden">
           <MobileMenuButton />
 
-          { isOpen ? ( <MobileSideMenu /> ) : null }
+          {isOpen ? <MobileSideMenu /> : null}
         </div>
       </div>
     </header>

@@ -65,8 +65,8 @@ const resources: FooterMenuType[] = [
 export function Footer() {
   return (
     <footer className="w-full border-t border-light-gray mt-16 ">
-      <div className="max-w-7xl w-full mx-auto pt-4 px-4 sm:px-8 sm:pt-8 md:pt-12 md:px-12 space-y-12" >
-        <div className="w-full flex flex-col sm:flex-row items-center sm:items-start sm:justify-start gap-[32px] md:gap-[60px] ld:gap-[100px]" >
+      <div className="max-w-7xl w-full mx-auto pt-4 px-4 sm:px-8 sm:pt-8 md:pt-12 md:px-12 space-y-12">
+        <div className="w-full flex flex-col sm:flex-row items-center sm:items-start sm:justify-start gap-[32px] md:gap-[60px] ld:gap-[100px]">
           <Link href="/">
             <div className="w-[200px]">
               <Image src={cmaLogo} alt="CMA Logo" />

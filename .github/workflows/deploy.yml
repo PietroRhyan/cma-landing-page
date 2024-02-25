@@ -1,0 +1,38 @@
+name: Deploy da CMA Landing Page
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Deploy da CMA Landing Page
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
+
+      - name: FTP Deploy Locaweb
+        uses: locaweb/ftp-deploy@1.0.0
+
+        with:
+          host: "ftp.cmadigitalmusic.com.br"
+          user: "cmadigitalmusic1"
+          password: ${{ secretds.CMA_PASSWORD }} 
+          localDir: ".next" 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
