@@ -37,7 +37,7 @@ jobs:
         uses: locaweb/ftp-deploy@1.0.0
 
         with:
-          host: "ftp.cmadigitalmusic.com.br"
-          user: "cmadigitalmusic1"
+          host: ${{ secrets.CMA_HOST }}
+          user: ${{ secrets.CMA_USER }}
           password: ${{ secrets.CMA_PASSWORD }} 
           localDir: ".next"
