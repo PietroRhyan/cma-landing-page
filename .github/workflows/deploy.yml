@@ -18,12 +18,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm ci
       - name: Build website
-        run: npm run build
+        run: pnpm run build
 
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
