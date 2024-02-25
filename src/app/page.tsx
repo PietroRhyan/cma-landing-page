@@ -377,9 +377,75 @@ export default function Home() {
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger>Lorem Ipsum</AccordionTrigger>
+              <AccordionTrigger>
+                Como faço para distribuir minha música pela Cma Digital Music?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Distribuir sua música como artista independente é simples. Siga
+                estes passos:
+                <ul className="pt-2">
+                  <li className="list-disc ml-4">
+                    Clique em &apos;Venha fazer parte&apos; : Envie suas
+                    informações para nossa equipe. Respondemos em até 3 dias
+                    úteis;
+                  </li>
+                  <li className="list-disc ml-4">
+                    Confirme os detalhes: Verifique se seu número de telefone
+                    (preferencialmente WhatsApp) está correto para facilitar o
+                    contato;
+                  </li>
+                  <li className="list-disc ml-4">
+                    Acesso aprovado: Após a aprovação, nossa equipe solicitará
+                    os conteúdos via WhatsApp ou email;
+                  </li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger>
+                A CMA Digital Music registra minha faixa?
+              </AccordionTrigger>
+              <AccordionContent>
+                Não, a CMA Digital Music é uma empresa de distribuição musical.
+                Recomendamos procurar uma associação musical para realizar o
+                registro de sua faixa.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                Quanto tempo leva para meu acesso estar pronto?
+              </AccordionTrigger>
+              <AccordionContent>
+                Após a aprovação da equipe, seu acesso estará disponível em até
+                7 dias úteis.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger>
+                A CMA Digital Music é uma produtora/gravadora?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim, temos nosso próprio estúdio no interior baiano com
+                tecnologia avançada e excelentes produtores. O estúdio está
+                disponível para nossos clientes interessados em gravar e
+                aprimorar a excelência de suas faixas. Entre em contato com
+                nossa equipe para verificar a disponibilidade.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6">
+              <AccordionTrigger>
+                Posso editar minha faixa após o lançamento?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim, é possível realizar edições como capa, arquivo da faixa,
+                nome, compositores e produtores. No entanto, algumas informações
+                como ISRC, UPC e ARTISTA PRINCIPAL não podem ser alteradas
+                diretamente. Para modificar esses detalhes, nossa equipe pode
+                orientá-lo em um processo específico.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

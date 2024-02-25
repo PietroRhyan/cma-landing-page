@@ -40,6 +40,4 @@ jobs:
           host: "ftp.cmadigitalmusic.com.br"
           user: "cmadigitalmusic1"
           password: ${{ secrets.CMA_PASSWORD }} 
-          localDir: ".next" 
-          user_name: github-actions[bot]
-          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          localDir: ".next"
