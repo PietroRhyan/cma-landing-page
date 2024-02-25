@@ -40,4 +40,4 @@ jobs:
           host: ${{ secrets.CMA_HOST }}
           user: ${{ secrets.CMA_USER }}
           password: ${{ secrets.CMA_PASSWORD }} 
-          localDir: "next"
+          localDir: ".next"
