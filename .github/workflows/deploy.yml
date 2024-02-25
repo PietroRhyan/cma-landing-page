@@ -12,9 +12,14 @@ jobs:
   deploy:
     name: Deploy da CMA Landing Page
     runs-on: ubuntu-latest
+
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -22,6 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm ci
+
       - name: Build website
         run: pnpm run build
 
