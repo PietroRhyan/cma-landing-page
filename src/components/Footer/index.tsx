@@ -28,39 +28,39 @@ const sessions: FooterMenuType[] = [
   },
 ]
 
-const importants: FooterMenuType[] = [
-  {
-    name: 'Documentação',
-    link: '/',
-  },
-  {
-    name: 'Lorem Ipsun',
-    link: '/',
-  },
-  {
-    name: 'Lorem Ipsum',
-    link: '/',
-  },
-  {
-    name: 'Lorem',
-    link: '/',
-  },
-]
+// const importants: FooterMenuType[] = [
+//   {
+//     name: 'Documentação',
+//     link: '/',
+//   },
+//   {
+//     name: 'Lorem Ipsun',
+//     link: '/',
+//   },
+//   {
+//     name: 'Lorem Ipsum',
+//     link: '/',
+//   },
+//   {
+//     name: 'Lorem',
+//     link: '/',
+//   },
+// ]
 
-const resources: FooterMenuType[] = [
-  {
-    name: 'Suporte',
-    link: '/',
-  },
-  {
-    name: 'Fórum',
-    link: '/',
-  },
-  {
-    name: 'Eventos',
-    link: '/',
-  },
-]
+// const resources: FooterMenuType[] = [
+//   {
+//     name: 'Suporte',
+//     link: '/',
+//   },
+//   {
+//     name: 'Fórum',
+//     link: '/',
+//   },
+//   {
+//     name: 'Eventos',
+//     link: '/',
+//   },
+// ]
 
 export function Footer() {
   return (
@@ -82,34 +82,6 @@ export function Footer() {
                   <Link href={session.link} key={session.name}>
                     <li className="text-base text-dark-gray font-medium transition-colors duration-200 hover:text-black">
                       {session.name}
-                    </li>
-                  </Link>
-                ))}
-              </menu>
-            </div>
-
-            <div className="flex min-w-[200px] flex-col items-start gap-6">
-              <h4 className="text-base font-bold">IMPORTANTE</h4>
-
-              <menu className="flex flex-col gap-3">
-                {importants.map((important) => (
-                  <Link href={important.link} key={important.name}>
-                    <li className="text-base text-dark-gray font-medium transition-colors duration-200 hover:text-black">
-                      {important.name}
-                    </li>
-                  </Link>
-                ))}
-              </menu>
-            </div>
-
-            <div className="flex min-w-[200px] flex-col items-start gap-6">
-              <h4 className="text-base font-bold">RECURSOS</h4>
-
-              <menu className="flex flex-col items-start gap-3">
-                {resources.map((resource) => (
-                  <Link href={resource.link} key={resource.name}>
-                    <li className="text-base text-dark-gray font-medium transition-colors duration-200 hover:text-black">
-                      {resource.name}
                     </li>
                   </Link>
                 ))}

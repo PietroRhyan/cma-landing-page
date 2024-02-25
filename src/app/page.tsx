@@ -263,9 +263,9 @@ export default function Home() {
             </div>
 
             <div className="flex w-full md:w-[145px] flex-col items-center md:items-start justify-center">
-              <span className="text-krona text-[32px]">6.5M</span>
+              <span className="text-krona text-[32px]">4.5B</span>
               <p className="text-sm text-poppins font-medium text-center sm:text-left text-gray">
-                Em movimentações
+                Em streamings
               </p>
             </div>
           </div>
