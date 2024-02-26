@@ -1,4 +1,4 @@
-import { graphcms } from '@/api/'
+import { graphcms } from '@/services/api'
 import { gql } from 'graphql-request'
 
 export interface ArtistCardType {

@@ -133,7 +133,7 @@ export default function Home() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow via-dark-yellow to-darkest-yellow">
                 carreira
               </span>{' '}
-              e transforme sua melodia em{' '}
+              e transforme sua música em{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow via-dark-yellow to-darkest-yellow">
                 sucesso
               </span>
@@ -276,11 +276,13 @@ export default function Home() {
             Sobre nós e nosso trabalho
           </h2>
           <p className="text-sm lgp:text-base font-medium max-w-[925px]">
-            A CMA Digital Music possui 20 anos de experiência no gerenciamento
-            de carreiras, produção musical, de shows e clipes, além de promover
-            aproximação do artista com o público final de maneira eficiente.
-            Fazemos sua música ganhar notoriedade tanto nos canais modernos de
-            divulgação musical, quanto nas tradicionais rádios brasileiras.
+            Fundada em 1993, a CMA Digital Music é uma empresa especializada em
+            distribuição musical, oferecendo expertise em gerenciamento de
+            carreiras, produção musical, shows e clipes. Comprometemo-nos a
+            ampliar a visibilidade da sua música em canais modernos. Além disso,
+            destacamos na venda e agenciamento de artistas. Confie na CMA para
+            impulsionar sua carreira musical, combinando tradição e inovação de
+            forma eficaz.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">

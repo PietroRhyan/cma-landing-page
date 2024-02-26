@@ -28,6 +28,22 @@ export default function Sobre() {
         </p>
 
         <p className="text-sm sm:text-base font-medium text-pretty">
+          Somos especialistas em todos os aspectos da indústria musical, desde a
+          produção até a promoção. Estamos envolvidos em cada etapa do processo,
+          garantindo que sua música alcance o reconhecimento merecido. Além
+          disso, temos uma presença marcante na hora dos shows, atuando na venda
+          e agenciamento de diversos tipos de artistas.
+        </p>
+
+        <p className="text-sm sm:text-base font-medium text-pretty">
+          Destacamos com orgulho parcerias exclusivas com talentos como
+          Filipinho do Arrocha, Rayone Cigano, O Reyzinho, entre outros. Essas
+          colaborações especiais enriquecem nosso portfólio e reforçam nosso
+          compromisso em oferecer oportunidades únicas para os artistas que
+          representamos.
+        </p>
+
+        <p className="text-sm sm:text-base font-medium text-pretty">
           Ao escolher a CMA Digital Music, você não apenas acessa uma plataforma
           de distribuição eficaz, mas também uma parceria dedicada a impulsionar
           sua carreira musical para novos patamares. Entre em contato conosco

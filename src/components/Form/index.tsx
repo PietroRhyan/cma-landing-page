@@ -4,6 +4,8 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import { z } from 'zod'
+import { sendMail } from '@/utils/resend/sendEmail'
+import { toast } from 'sonner'
 
 const createFormSchema = z.object({
   name: z
@@ -34,12 +36,28 @@ export function Form() {
     formState: { errors },
     reset,
   } = useForm<formDataType>({ resolver: zodResolver(createFormSchema) })
-  const onSubmit: SubmitHandler<formDataType> = (data) => console.log(data)
+  const onSubmit: SubmitHandler<formDataType> = async (data) => {
+    const result = await sendMail({
+      user: data.name,
+      email: data.email,
+      label: data.label,
+      phone: data.phone,
+      objective: data.objective,
+    })
+
+    if (result.status === 'success') {
+      toast.success('Email enviado com sucesso!')
+      reset()
+      return
+    }
+
+    toast.error('Algo deu errado com o envio de email.')
+  }
 
   return (
     <form
-      action=""
       onSubmit={handleSubmit(onSubmit)}
+      action=""
       className="w-full flex flex-col items-start justify-center gap-3"
     >
       <label
@@ -131,7 +149,7 @@ export function Form() {
         <textarea
           id="objective"
           {...register('objective')}
-          placeholder="Digite aqui seus principais objetivos que quer alcançar como artista"
+          placeholder="Digite aqui seus principais objetivos que gostaria de alcançar como artista"
           className="w-full text-sm resize-none min-h-[100px] font-medium bg-[#FFF] placeholder-light-gray p-2 border border-light-gray rounded-[4px] outline-none shadow-input"
         />
         {errors.objective ? (
