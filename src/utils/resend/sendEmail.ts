@@ -23,7 +23,7 @@ export async function sendMail({
   try {
     const { data, error } = await resend.emails.send({
       from: 'CMA Digital Music <contato@cmadigitalmusic.com.br>',
-      to: 'pietroqjg@gmail.com',
+      to: 'contato@cmadigitalmusic.com.br',
       subject: 'NOVO CLIENTE!',
       react: NewClientEmail({ user, label, email, phone, objective }),
     })
