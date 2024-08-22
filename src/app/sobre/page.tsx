@@ -12,7 +12,7 @@ export default function Sobre() {
           buscam ampliar sua presença nos principais canais digitais. Com uma
           abordagem focada na excelência, somos dedicados a simplificar o
           processo de distribuição, permitindo que artistas concentrem sua
-          energia na criação, enquanto nós cuidamos da promoção eficiente em
+          energia na criação, enquanto cuidamos da promoção eficiente em
           plataformas como Spotify, iTunes, YouTube, Google Play, Amazon, entre
           outras.
         </p>
@@ -20,27 +20,27 @@ export default function Sobre() {
         <p className="text-sm sm:text-base font-medium text-pretty">
           Nosso compromisso vai além da simples distribuição; a CMA Digital
           Music está empenhada em promover o crescimento sustentável das
-          carreiras musicais que representamos. Contando com a experiência
-          sólida de Carlos Matias Amorim, um executivo com duas décadas de
-          atuação no mercado musical, nossa empresa está capacitada não apenas
-          na distribuição estratégica, mas também em oferecer suporte
+          carreiras musicais que representamos. Com a sólida experiência de
+          Carlos Matias Amorim, um executivo com duas décadas de atuação no
+          mercado musical, nossa empresa está capacitada para oferecer suporte
           abrangente, desde a produção musical até a promoção de shows e clipes.
         </p>
 
         <p className="text-sm sm:text-base font-medium text-pretty">
-          Somos especialistas em todos os aspectos da indústria musical, desde a
-          produção até a promoção. Estamos envolvidos em cada etapa do processo,
-          garantindo que sua música alcance o reconhecimento merecido. Além
-          disso, temos uma presença marcante na hora dos shows, atuando na venda
-          e agenciamento de diversos tipos de artistas.
+          Somos especialistas em todos os aspectos da indústria musical e
+          estamos envolvidos em cada etapa do processo, garantindo que sua
+          música alcance o reconhecimento merecido. Além disso, temos uma
+          presença marcante na organização de shows, atuando na venda e
+          agenciamento de artistas de diversos gêneros.
         </p>
 
         <p className="text-sm sm:text-base font-medium text-pretty">
-          Destacamos com orgulho parcerias exclusivas com talentos como
-          Filipinho do Arrocha, Rayone Cigano, O Reyzinho, entre outros. Essas
-          colaborações especiais enriquecem nosso portfólio e reforçam nosso
-          compromisso em oferecer oportunidades únicas para os artistas que
-          representamos.
+          Temos orgulho de representar e colaborar com talentos como Desejo de
+          Menina, Heytor o Boyzinho, Carol Maia, Anízio Júnior, Daniel Diau,
+          Raquel dos Teclados, Filipinho do Arrocha, Rayone Cigano, e O
+          Reyzinho, entre outros. Essas parcerias exclusivas enriquecem nosso
+          portfólio e reforçam nosso compromisso em oferecer oportunidades
+          únicas para os artistas que confiam em nosso trabalho.
         </p>
 
         <p className="text-sm sm:text-base font-medium text-pretty">

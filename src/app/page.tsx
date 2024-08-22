@@ -396,9 +396,10 @@ export default function Home() {
                 A CMA Digital Music registra minha faixa?
               </AccordionTrigger>
               <AccordionContent>
-                Não, a CMA Digital Music é uma empresa de distribuição musical.
-                Recomendamos procurar uma associação musical para realizar o
-                registro de sua faixa.
+                Sim, a Cma Digital Music pode realizar o registro da sua faixa e
+                cuidar da transferência de suas obras da sua editora atual para
+                a nossa. O processo é simples, rápido e conduzido com a
+                eficiência que você merece.
               </AccordionContent>
             </AccordionItem>
 
